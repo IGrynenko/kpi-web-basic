@@ -1,0 +1,9 @@
+.second-pic {
+    max-height: 620px;
+    max-width: 1100px;
+    overflow: hidden;
+}
+
+.btns {
+    padding-top: 20px;
+}

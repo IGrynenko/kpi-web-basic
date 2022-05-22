@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <style>
+        .main-container {
+            width: 80%;
+            margin: auto;
+        }
+        .first-container, .second-container {
+            height: 500px;
+        }
+        .second-container {
+            margin-top: 40px;
+        }
+        .text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div-1 {
+            width: 33%;
+            float: left;
+            height: 400px;
+            background-color: green;
+        }
+        .div-2 {
+            width: 67%;
+            float: right;
+            height: 100px;
+            background-color: blue;
+        }
+        .div-3 {
+            width: 33%;
+            float: right;
+            height: 400px;
+            background-color: pink;
+        }
+        .div-4 {
+            width: 34%;
+            float: right;
+            height: 300px;
+            background-color: yellow;
+        }
+        .div-5 {
+            width: 67%;
+            float: left;
+            height: 100px;
+            background-color: orange;
+        }
+        .second-container {
+            display: grid;
+            grid-template-areas:
+            'gr bl bl'
+            'gr yl pn'
+            'or or pn';
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        .div-2-1 {
+            grid-area: gr;
+            background-color: green;
+        }
+        .div-2-2 {
+            grid-area: bl;
+            background-color: blue;
+        }
+        .div-2-3 {
+            grid-area: yl;
+            background-color: yellow;
+        }
+        .div-2-4 {
+            grid-area: pn;
+            background-color: pink;
+        }
+        .div-2-5 {
+            grid-area: or;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="first-container">
+            <div class="text-container div-1">
+                <div>IMG</div>
+            </div>
+            <div class="text-container div-2">
+                <div>TEXT</div>
+            </div>
+            <div class="text-container div-3">
+                <div>TEXT</div>
+            </div>
+            <div class="text-container div-4">
+                <div>IMG</div>
+            </div>
+            <div class="text-container div-5">
+                <div>TEXT</div>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="text-container div-2-1">
+                <div>IMG</div>
+            </div>
+            <div class="text-container div-2-2">
+                <div>TEXT</div>
+            </div>
+            <div class="text-container div-2-3">
+                <div>IMG</div>
+            </div>
+            <div class="text-container div-2-4">
+                <div>TEXT</div>
+            </div>
+            <div class="text-container div-2-5">
+                <div>TEXT</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

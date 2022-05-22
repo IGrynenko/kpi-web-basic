@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, tr, td {
+            border: 1px solid #000;
+        }
+        tr {
+            height: 50px;
+        }
+        td {
+            width: 20%;
+        }
+        tr:nth-child(1) {
+            background-color: #098f8f;
+        }
+        tr:nth-child(2) {
+            background-color: #f5f509;
+        }
+        .first-row:hover, .second-row:hover {
+            filter: invert(100%);
+        }
+        .shape-container {
+            padding-top: 50px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: relative;
+            left: 100px;
+            bottom: 150px;
+        }
+        .rectangle {
+            width: 300px;
+            height: 200px;
+            background-color:#fff;
+            border: #000 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="first-row">
+            <td colspan="2" rowspan="2">Гриненко Іван<br>Здрок Володимир</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="second-row">
+            <td rowspan="2">ЗПІ-ЗП11, 1, 9</td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="shape-container">
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+	padding: 0;
+}
+body {
+    background-color: rgb(192, 192, 192);
+    height: 100vh;
+    width: 100vw;
+}
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#download-btn {
+    background-color: rgb(52, 58, 64);
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#download-btn:hover {
+    cursor: pointer;
+}
+#status {
+    font-size: 22px;
+}
+.person-card {
+    height: 400px;
+    width: 220px;
+    border: solid 1px #000;
+}
+.pic {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.info {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(52, 58, 64);
+}
+.info > p {
+    margin: 0px 10px;
+    font-size: 15px;
+    color: #fff;
+}
