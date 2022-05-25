@@ -12,4 +12,12 @@
 
 #results {
     display: none;
+    width: 220px;
+    margin: auto;
+    border: solid 1px #000;
+    margin-top: 15px;
+}
+
+#results p {
+    padding: 0px 10px;
 }

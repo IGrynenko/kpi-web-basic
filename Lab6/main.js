@@ -44,7 +44,7 @@ function validateElement(element) {
     if (!reg) return;
 
     const result = reg.test(element.value);
-    element.style.backgroundColor = !result ? 'red' : 'white';
+    element.style.backgroundColor = !result ? 'rgb(255, 123, 123)' : 'white';
 
     return result;
 }
