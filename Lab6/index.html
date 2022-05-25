@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="form-block">
+        <form action="">
+            <label for="pib">
+                <input id="pib" type="text" name="pib" placeholder="ПІБ" pattern="[a-zA-Z0-9]+">
+            </label>
+            <label for="option">
+                <input id="option" type="text" name="option" placeholder="Варіант">
+            </label>
+            <label for="group">
+                <input id="group" type="text" name="group" placeholder="Група">
+            </label>
+            <label for="faculty">
+                <input id="faculty" type="text" name="faculty" placeholder="Факультет">
+            </label>
+            <label for="birth">
+                <input id="birth" type="text" name="birth" placeholder="Дата народження">
+            </label>
+            <button type='button' onclick="validateForm()">Підтвердити</button>
+        </form>
+    </div>
+    <div id="results">
+        <p id="pib-result"></p>
+        <p id="option-result"></p>
+        <p id="group-result"></p>
+        <p id="faculty-result"></p>
+        <p id="birth-result"></p>
+    </div>
+</body>
+</html>
